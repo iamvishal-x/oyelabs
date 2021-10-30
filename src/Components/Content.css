@@ -1,0 +1,138 @@
+.main {
+  display: flex;
+  color: white;
+  margin: 1rem;
+  justify-content: space-evenly;
+  align-content: stretch;
+  align-items: stretch;
+}
+@media only screen and (max-width: 700px) {
+  .main {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.left {
+  flex: 1;
+  border-radius: 15px;
+  background-color: #212121;
+  margin-top: 1rem;
+  box-shadow: 10px 10px 10px #212121;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.right,
+.left h1 {
+  text-align: center;
+}
+.right {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  margin: 25px 35px;
+  background-color: #212121;
+  margin-top: 1rem;
+  box-shadow: 10px 10px 10px #212121;
+}
+.right__scroll {
+  overflow: auto;
+  max-height: 450px;
+}
+.right__title {
+  font-size: 2.3rem;
+  padding: 20px;
+  padding-bottom: 1rem;
+}
+.right__leaderboard {
+  display: flex;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  font-size: 25px;
+}
+.table__headings {
+  font-size: 17px;
+  color: black;
+}
+
+th {
+  padding: 15px;
+  font-weight: 700;
+}
+td {
+  padding: 10px;
+}
+
+.buttons {
+  display: flex;
+  flex-flow: row-reverse;
+  margin-top: 10px;
+}
+.btn {
+  padding: 10px;
+  width: 5rem;
+  background-color: whitesmoke;
+}
+.button {
+  margin-right: 5px;
+}
+.button:hover {
+  transition: all 0.1s ease-out;
+  opacity: 0.9;
+}
+.btn__add:hover {
+  transition: all 0.1s ease-out;
+  opacity: 0.9;
+}
+button:disabled {
+  background-color: #f90;
+  color: black;
+}
+button {
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  border: 0px;
+}
+label {
+  font-size: 1rem;
+  margin: 10px;
+  margin-left: 1px;
+}
+input,
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 0px;
+}
+input:focus {
+  outline: none;
+}
+thead {
+  background-color: #f90;
+}
+tbody {
+  overflow: hidden;
+}
+table {
+  margin-bottom: 20px;
+  overflow: scroll;
+  width: 100%;
+}
+/* table {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 15px;
+} */
